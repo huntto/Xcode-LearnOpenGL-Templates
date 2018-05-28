@@ -83,6 +83,7 @@
 						<string>main.cpp:processInput</string>
 						<string>main.cpp:framebuffer_size_callback</string>
 						<string>glad.c</string>
+						<string>stb_image.cpp</string>
 					</array>
 					<key>Definitions</key>
 					<dict>
@@ -282,6 +283,8 @@ const char *fragmentShaderSource = &quot;#version 330 core\n&quot;
 			<array>
 				<string>$(GLFW_PATH)/include</string>
 				<string>$(GLAD_PATH)/include</string>
+				<string>$(STB_PATH)</string>
+				<string>$(GLM_PATH)</string>
 			</array>
 			<key>OTHER_LDFLAGS</key>
 			<array>
@@ -291,6 +294,11 @@ const char *fragmentShaderSource = &quot;#version 330 core\n&quot;
 	</dict>
 	<key>Definitions</key>
 	<dict>
+		<key>stb_image.cpp</key>
+		<dict>
+			<key>Path</key>
+			<string>stb_image.cpp</string>
+		</dict>
 		<key>*:main</key>
 		<dict>
 			<key>Beginning</key>
